@@ -90,6 +90,8 @@ After a minute or so:
 
 It gives the output of a static file located on the instance (closest to where the request comes from).
 
+The instance is configured to shutdown after 45 minutes.
+
 ### Things to do
 
 Several things that can be done:
@@ -97,3 +99,4 @@ Several things that can be done:
 - Put the AWS Elastic Load Balancer in front of the instances.
 - Use the AWS Route53 for a true latency based routing.
 - Compartmentalize the process using Docker (for process isolation and added security).
+- Use software configuration management.
