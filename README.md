@@ -5,7 +5,7 @@ mako-mori
 
 An experimental scalable and load balanced cluster (with caveats) :smile:
 
-The app can provision new servers as the number of requests increases. And it can provision new servers in the data center region closest to where the requests come from.
+**The app can provision new servers as the number of requests increases. And it can provision new servers in the data center region closest to where the requests come from.**
 
 *Disclaimer: treat this as a weekend hack project (don't put it in production).*
 
