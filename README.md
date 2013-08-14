@@ -5,7 +5,7 @@ mako-mori
 
 An experimental scalable and load balanced cluster (with caveats) :smile: It's an HTTP-serving app that forwards requests to the nearest slave server (and if necessary, provision the slave server dynamically).
 
-Disclaimer: treat this as a weekend hack project (don't put it in production).
+*Disclaimer: treat this as a weekend hack project (don't put it in production).*
 
 It's a Google App Engine application (HTTP) backed by Amazon Web Services. It acts as a reverse proxy and a manager for AWS EC2 computers (instances). When it receives an HTTP request:
 
@@ -88,7 +88,7 @@ After a minute or so:
     $ curl https://localhost/test
     {"status":"OK","region":"Sydney","result":"ip-172-31-14-19\nap-southeast-2\n"}
 
-It gives the output of a static file located on the instance.    
+It gives the output of a static file located on the instance (closest to where the request comes from).
 
 ### Things to do
 
