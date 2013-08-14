@@ -3,7 +3,9 @@ mako-mori
 
 ### What
 
-An experimental scalable and load balanced cluster (with caveats) :smile: It's an HTTP-serving app that forwards requests to the nearest slave server (and if necessary, provision the slave server dynamically).
+An experimental scalable and load balanced cluster (with caveats) :smile:
+
+The app can provision new servers as the number of requests increases. And it can provision new servers in the data center region closest to where the requests come from.
 
 *Disclaimer: treat this as a weekend hack project (don't put it in production).*
 
@@ -100,3 +102,7 @@ Several things that can be done:
 - Use the AWS Route53 for a true latency based routing.
 - Compartmentalize the process using Docker (for process isolation and added security).
 - Use software configuration management.
+
+### License
+
+MIT.
