@@ -5,9 +5,10 @@ sys.path.insert(0, config.APP_ROOT_DIR)
 sys.path.insert(1, os.path.join(config.APP_ROOT_DIR, 'external'))
 
 import webapp2
-from handlers import index, test
+from handlers import index, test, status
 
 app = webapp2.WSGIApplication([
 								('/', index.IndexHandler),
-								('/test', test.TestHandler)
+								('/test', test.TestHandler),
+								('/status', status.StatusHandler)
 								], debug=True)
